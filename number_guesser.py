@@ -18,19 +18,13 @@ while (guessed_number != correct_number):
 
 
 	if (difference > 10):
-
 		print("cold")
-
 	else:
 
 		if (difference >= 5 and difference <= 10):
-
 			print("warm")
-
 		else:
-
 			# it can only be hot now
 			print("hot")
-
 
 print("your guess is correct!")
