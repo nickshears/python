@@ -1,7 +1,9 @@
 import random
 
+# generate a random number
 correct_number = random.randint(0, 100)
-# fake input number to assume it's wrong so the loop can start
+
+# fake a guessed number that's wrong so the loop can start
 guessed_number = None
 
 while (guessed_number != correct_number):
