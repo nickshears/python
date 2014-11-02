@@ -1,33 +1,37 @@
-comma_string = input("Please enter a string of items: ")
+items = input("Please enter a string of items: ")
 
 count = 0;
 
+# this list will end up containing each item that has been seperated by a comma
 word_list = []
+
+# 
 current_word = '';
 
-string_length = len(comma_string)
+items_length = len(items)
 
-while (string_length > count):
+while (items_length > count):
 
 	# the current character
-	char = comma_string[count]
+	char = items[count]
 
 	# if the character is a comma
 	if (char == ','):
 
-		# then a new word has started, put the current word into a list
+		# then a new word has started, so put the current word variable into a list
 		word_list.append(current_word)
 
-		# and reset the current word string
+		# and reset the current word string to start building the next word
 		current_word = ''
 
+	# if the character is not a comma
 	else:
 
-		# append the char to the current word as its not a comma 
+		# append the character to the current word
 		current_word+= char
 
-		# then if this is the final loop, add the current word because we won't encounter another comma
-		if (count == string_length-1):
+		# and if this is the final loop, add the current word because we won't encounter another comma
+		if (count == items_length-1):
 
 			word_list.append(current_word)
 
