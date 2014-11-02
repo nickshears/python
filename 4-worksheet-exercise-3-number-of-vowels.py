@@ -20,8 +20,8 @@ while (word != "stop"):
 			vowels[low_letter] = vowels[low_letter]+1
 
 
-# only problem is the ordering of the list, would be better if a, e, i, o, u
-for vowel, count in vowels.items():
+# only problem is the ordering of the dictionary is lost, would be better if a, e, i, o, u
+for vowel, count in sorted(vowels.items()):
 
 	upper_vowel = vowel.upper()
 
