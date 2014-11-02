@@ -5,7 +5,7 @@ count = 0;
 # this list will end up containing each item that has been seperated by a comma
 word_list = []
 
-# 
+# append characters to this word through the loop, and reset it when a comma occurs
 current_word = '';
 
 items_length = len(items)
